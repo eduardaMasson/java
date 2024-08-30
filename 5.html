@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var lista1 = [1,2,3,4,5,6] //cria lista
+        var maior = 0 //cria a lista
+        var menor = 999 //cria lista
+        for (contar in lista1) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
+            if (lista1[contar] > maior) //condição para numero maior
+            maior = lista1[contar] //adiconar na variavel
+            if (lista1[contar] < menor) //condição para numero menor
+            menor = lista1[contar] //tornar a variavel
+        }           
+        alert('Maior: ' + maior + 'Menor: ' + menor) //exibe o resultado
+    </script>
+</head>
+<body>
+    <h1>Encontrar o Maior e o Menor Valor</h1>
+</body>
+</html>

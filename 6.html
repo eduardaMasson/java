@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        var lista1 = [1,2,3,4,5] //cria a lista
+        var lista2 = [5,6,7,8,9] //cria a lista
+        var listanova = [] //cria lista vazia
+
+        for (contar1 in lista1) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
+            for(contar2 in lista2) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
+                if (lista1[contar1] == lista2[contar2]) { //condição para ver o elemento que se repete
+                   listanova.push(lista1[contar1]) //adiciona na lista vazia
+                }
+            }
+        }
+        alert(listanova) //exibe a lista
+
+    </script>
+</head>
+<body>
+    <h1>Intersecção de Listas</h1>
+</body>
+</html>
