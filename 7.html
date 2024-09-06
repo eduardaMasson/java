@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script>
-        var lista1 = [0,1,2,3,4] //cria a lista
-        for (contar in lista1) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
-            if (contar % 2 != 0) {//condição
-                lista1.splice(contar, 1) //remove os elementos da posição ímpar
-            }
+        var lista = [1,2,3,4,5] //cria a lista
+        var soma = 0
+        var multiplicacao = 1
+        for (contar in lista) {
+            soma = (lista[contar]) + soma
         }
-        alert(lista1) //exibe a lista
+        for (contar in lista) {
+            multiplicacao = (lista[contar]) * multiplicacao
+        }
+        alert('Soma: ' + soma + ' Multiplicação: ' + multiplicacao + ' Números: ' + lista) //exibe a lista
     </script>
 </head>
 <body>
-    <h1>Remover Elementos em Posições Ímpares</h1>
+    <h1>7</h1>
 </body>
 </html>

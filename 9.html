@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script>
-        var nota = [7,8,9,10] //cria a lista
+        var lista = [1,2,3,4,5,6,7,8,9,10] //cria a lista
         var soma = 0
-        for (contar in nota) {
-            soma = (nota[contar]) + soma
+        for (contar in lista) {
+            soma = soma + (lista[contar]) ** 2
         }
-        media = soma / nota.length 
-        alert('Notas: ' + nota + ' Média: ' + media) //exibe a lista
+        alert('Soma: ' + soma + ' Números: ' + lista ) //exibe a lista
     </script>
 </head>
 <body>
-    <h1>3</h1>
+    <h1>9</h1>
 </body>
 </html>
