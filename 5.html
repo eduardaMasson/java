@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <title>javaScript</title>
     <script>
-        var num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-        var par = [];
-        var impar = [];
-        for (lista in num) {
-            if (num[lista] % 2 == 0) {
-                par.push(num[lista]);
-            } else {
-                impar.push(num[lista]);
-            }
-        }
-        alert("Lista: " + num);
-        alert("Pares: " + par);
-        alert("Ímpares: " + impar);
+        var lista1 = [1,2,3,4,5,6] //cria lista
+        var maior = 0 //cria a lista
+        var menor = 999 //cria lista
+        for (contar in lista1) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
+            if (lista1[contar] > maior) //condição para numero maior
+            maior = lista1[contar] //adiconar na variavel
+            if (lista1[contar] < menor) //condição para numero menor
+            menor = lista1[contar] //tornar a variavel
+        }           
+        alert('Maior: ' + maior + 'Menor: ' + menor) //exibe o resultado
     </script>
 </head>
 <body>
-    <h1>5</h1>
+    <h1>Encontrar o Maior e o Menor Valor</h1>
 </body>
 </html>
