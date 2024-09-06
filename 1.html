@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
     <script>
+        var lista = [1,2,3,4,5,6] //cria a lista
+        var numero = 0 //cria variável para o  número 5
+        for (contar in lista) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)
+            if (lista[contar] == 5){ //a variável começa a valer o primeiro elemento e soma com o seguinte
+                numero = numero + 1 //somar com a variável
+            }           
+        } if (numero > 0) { //condição
+            alert("O número 5 está presente")
+        } else { //senão
+            alert("O número 5 não está presente")
         var lista = [1,2,3,4,5] //cria a lista
         for (contar in lista) { //percorer os elementos - o "posicao" se refere a posição da variável (0,1,2,3,4,5)          
             alert(lista[contar]) //exibe a saída formatada
